@@ -11,7 +11,7 @@ type NDKActions = {
 
 export const useStore = create<NDKState & NDKActions>()((set) => ({
   ndk: new NDK({
-    explicitRelayUrls: ['wss://nos.lol'],
+    explicitRelayUrls: [],
   }),
 
   setNdk: (ndk) => set({ ndk }),
